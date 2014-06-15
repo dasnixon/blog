@@ -1,0 +1,10 @@
+#posts
+  h1 Posts
+  ul
+    each post in controller
+      h3
+        = post.title
+        span
+          = post.created_at
+
+      p= post.body
